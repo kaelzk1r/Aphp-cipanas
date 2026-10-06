@@ -1,0 +1,108 @@
+:root{
+    --hijau:#0a5c36;
+    --hijau-muda:#d6efdc;
+    --hitam:#111111;
+    --putih:#ffffff;
+    --abu:#f4f4f4;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--putih);color:var(--hitam);font-family:'Inter',sans-serif;scroll-behavior:smooth;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;background:var(--hitam);color:white;position:sticky;top:0;z-index:10;}
+.logo{font-family:'Space Grotesk';font-weight:700;font-size:22px;}
+.logo span{color:var(--hijau-muda);}
+nav ul{display:flex;gap:30px;list-style:none;}
+nav a{color:white;text-decoration:none;font-size:14px;opacity:0.8;}
+nav a:hover{opacity:1;color:var(--hijau-muda);}
+
+.hero{display:flex;min-height:90vh;padding:5% 8%;gap:40px;background:var(--putih);}
+.hero-text{flex:1;}
+.badge{background:var(--hitam);color:var(--hijau-muda);padding:6px 12px;border-radius:20px;font-size:11px;letter-spacing:1px;}
+.hero h1{font-family:'Space Grotesk';font-size:64px;line-height:0.9;margin:20px 0;font-weight:700;}
+.hero h1 span{color:var(--hijau);-webkit-text-stroke:1px var(--hijau);background:transparent;}
+.hero p{max-width:450px;opacity:0.7;line-height:1.6;margin-bottom:30px;}
+.hero-btn{display:flex;gap:15px;}
+.btn-primary{background:var(--hijau);color:white;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:600;}
+.btn-secondary{border:1px solid var(--hitam);color:var(--hitam);padding:12px 24px;border-radius:30px;text-decoration:none;}
+.hero-img{flex:1;display:flex;justify-content:center;}
+.img-box{position:relative;width:380px;height:480px;border-radius:20px;overflow:hidden;border:4px solid var(--hitam);}
+.img-box img{width:100%;height:100%;object-fit:cover;filter:grayscale(20%);}
+.img-overlay{position:absolute;bottom:15px;left:15px;background:var(--putih);padding:8px 14px;border-radius:20px;font-size:12px;font-weight:600;}
+
+.about{display:flex;padding:80px 8%;background:var(--hitam);color:var(--putih);}
+.about-left{flex:1;}
+.about-left h2{font-family:'Space Grotesk';font-size:48px;}
+.line{width:80px;height:4px;background:var(--hijau);margin-top:20px;}
+.about-right{flex:1.5;}
+.about-right p{margin-bottom:15px;opacity:0.8;line-height:1.7;}
+.stats{display:flex;gap:40px;margin-top:30px;}
+.stats h3{font-size:32px;color:var(--hijau-muda);}
+
+.kompetensi{padding:80px 8%;background:var(--abu);}
+.section-title{font-family:'Space Grotesk';font-size:36px;margin-bottom:40px;}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.card{background:var(--putih);border:1px solid var(--hitam);padding:25px;border-radius:16px;transition:0.3s;}
+.card span{font-size:12px;background:var(--hijau-muda);padding:4px 8px;border-radius:10px;}
+.card h3{margin:15px 0 10px;font-family:'Space Grotesk';}
+.card.active{background:var(--hijau);color:white;transform:translateY(-10px);}
+.card:hover{transform:translateY(-5px);}
+
+.produk{padding:80px 8%;}
+.produk-header{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px;}
+.produk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.produk-item{border:1px solid var(--hitam);border-radius:16px;overflow:hidden;}
+.produk-item img{width:100%;height:200px;object-fit:cover;}
+.produk-item h4{padding:15px;font-family:'Space Grotesk';}
+
+footer{text-align:center;padding:30px;background:var(--hitam);color:white;font-size:13px;opacity:0.7;}
+@media(max-width:800px){.hero,.about,.cards,.produk-grid,.produk-header{flex-direction:column;grid-template-columns:1fr;}.hero h1{font-size:42px;}.img-box{width:100%;height:350px;}}
+
+.hero-center{flex-direction:column;align-items:center;text-align:center;justify-content:center;min-height:95vh;}
+.small-school{font-family:'Space Grotesk';font-size:16px;letter-spacing:5px;text-transform:uppercase;margin:15px 0 25px;color:#0a5c36;font-weight:700;}
+.section-subtitle{opacity:0.6;margin:-15px 0 30px;}
+
+.alat{padding:80px 8%;background:#111;color:white;}
+.alat .section-title{color:white;}
+.alat-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;}
+.alat-card{background:white;color:#111;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;border:2px solid #0a5c36;}
+.alat-card img{width:100%;height:200px;object-fit:cover;}
+.alat-info{padding:20px;}
+.alat-info h3{font-family:'Space Grotesk';font-size:18px;margin-bottom:8px;}
+.fungsi{display:block;background:#d6efdc;color:#0a5c36;padding:8px 10px;border-radius:8px;font-size:12px;margin-bottom:10px;font-weight:600;}
+.cara{font-size:13px;line-height:1.6;opacity:0.8;}
+
+@media(max-width:800px){.alat-grid{grid-template-columns:1fr;}}
+
+.hero-agribisnis {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(8px);
+  transform: scale(1.1);
+}
+.hero-agribisnis-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+.hero-agribisnis-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.hero-agribisnis-content h1 {
+  color: white !important;
+}
